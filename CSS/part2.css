@@ -1,0 +1,128 @@
+.stories {
+  position: relative;
+  height: 1350px;
+  display: grid;
+  width: 100%;
+  margin: auto;
+  background-color: #eff8ff;
+}
+.grid {
+  grid-template-columns: 40% auto;
+  grid-template-rows: 80px 800px auto;
+  grid-template-areas:
+    "topside topside"
+    "leftside rightside"
+    "bottomside bottomside";
+  gap: 40px;
+}
+.grid p {
+  font-size: 20px;
+}
+.topside {
+  grid-area: topside;
+  padding-top: 10px;
+}
+.leftside {
+  grid-area: leftside;
+}
+.rightside {
+  grid-area: rightside;
+  width: 100%;
+  padding-right: 20px;
+}
+.bottomside {
+  grid-area: bottomside;
+  padding-right: 40px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.mainrightside {
+  padding: 20px;
+  line-height: 2;
+}
+.grid h2 {
+  padding-bottom: 20px;
+  line-height: 2;
+}
+.leftside {
+  width: 100%;
+  line-height: 2;
+  height: 100%;
+}
+.bottomside {
+  line-height: 2;
+}
+
+/* form */
+.showcase-form {
+  padding-top: 40px;
+  height: 600px;
+  background-image: url(../images/background9.jpg);
+  position: relative;
+}
+.button {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 5px 10px;
+  background: #d68060;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.card {
+  background-color: #f0e2d0;
+  height: 300px;
+  width: 400px;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 20px;
+  text-align: left;
+  animation-name: movement;
+  animation-duration: 4s;
+  animation-delay: 10s;
+  position: relative;
+}
+@keyframes movement{
+  from {bottom: -200px;}
+  to {bottom: 0px;}
+}
+
+.form-control input[type="text"],
+.form-control input[type="email"] {
+  margin: 20px 0;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  border-bottom: 2px solid #5eaaa8;
+  background-color: #f0e2d0;
+  text-align: left;
+}
+.form-control input:focus {
+  outline: none;
+}
+.pencil{
+  position: absolute;
+  top: 280px;
+}
+/* contact */
+.contact {
+  padding: 40px;
+  width: 100%;
+  height: 160px;
+  align-items: center;
+  background-color: #706897;
+}
+.contact a {
+  padding: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.footer h3 {
+  padding-top: 20px;
+}

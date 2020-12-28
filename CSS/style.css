@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #45272c;
+  text-align: center;
+}
+body {
+  font-family: "PT Serif", serif;
+  color: #45272c;
+  font-size: 18px;
+  line-height: 1.5;
+  
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  line-height: 1.6;
+  font-size: 50px;
+}
+h2 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.container {
+  background-color: #f2f4c0;
+  color: black;
+  max-width: 1400px;
+  text-align: center;
+  margin: 0 auto;
+}
+.navbar {
+  position: relative;
+  height: 660px;
+  background-image: url(../images/background3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: birdmovement;
+  animation-duration: 10s;
+  animation-delay: 2s;
+}
+@keyframes birdmovement {
+  0% {
+    background-color: greenyellow;
+  }
+  25% {
+    background-image: url(../images/background1.jpg);
+  }
+  50% {
+    background-image: url(../images/background2.jpg);
+  }
+  75% {
+    background-image: url(../images/background4.jpg);
+  }
+  100% {
+    background-image: url(../images/background3.jpg);
+  }
+}
+
+img {
+  width: 80%;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.first a {
+  padding: 20px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+ul {
+  list-style-type: none;
+}
+
+.first a:hover{
+  color: blue;
+  height: 20px;
+  font-size: 24px;
+  border-bottom: 3px solid white;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.first {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.top_container {
+  padding-top: 120px;
+  border-top: 10px;
+  position: relative;
+}
+.top_container h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 60px;
+  padding-top: 30px;
+}
+.thesun {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.top_container h3 {
+  font-size: 80px;
+}
+.animal {
+  width: 8%;
+}
+.butterfly {
+  justify-content: flex-end;
+  position: relative;
+  bottom: 60px;
+}
+.bee {
+  position: relative;
+  bottom: 100px;
+  left: 300px;
+}
+
+.flying {
+  animation-name: bird;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  width: 15%;
+}
+@keyframes bird {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  10% {
+    left: 100px;
+    top: 0px;
+  }
+  20% {
+    left: 150px;
+    top: 50px;
+  }
+  40% {
+    left: 200px;
+    top: 100px;
+  }
+  55% {
+    left: 300px;
+    top: 250px;
+  }
+  65% {
+    left: 400px;
+    top: 250px;
+  }
+  75% {
+    left: 500px;
+    top: 250px;
+  }
+  85% {
+    left: 600px;
+    top: 250px;
+  }
+  95% {
+    left: 900px;
+    top: 250px;
+  }
+  100% {
+    left: 1100px;
+    top: 280px;
+  }
+}
+.bookoftheweek {
+  height: 1650px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  background-color: #fff3b2;
+}
+.bookoftheweek h1 {
+  padding: 30px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+.book{
+  width: 30%;
+  height: 760px;
+}
+.row img{
+  width: 300px;
+  height: 400px;
+}
+.row p{
+  line-height: 1.5;
+  height: 220px;
+}
+
+.inspirationspeeches {
+  height: 1900px;
+  position: relative;
+  background-color: #f2f4c0;
+  
+
+}
+.main_speeches {
+  position: absolute;
+  top: 130px;
+  display: flex;
+  flex-direction: column;
+}
+.speeches {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding: 30px;
+  line-height: 2;
+}
+.video {
+  width: 50%;
+  float: right;
+  margin-left: 50px;
+}
+.leftvideo {
+  width: 50%;
+  float: left;
+  margin-right: 50px;
+}
+.speeches p {
+  font-size: 20px;
+  font-style: italic;
+}
+.speeches a {
+  padding-top: 10px;
+  font-size: 40px;
+}
+.speeches h2 {
+  padding-top: 10px;
+}
+.read-more{
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  background:#e08f62;
+  padding: 5px 5px;
+  font-size: 18px;
+  
+}
